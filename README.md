@@ -1,3 +1,7 @@
+> **Implementation status — reviewed 2026-11-16:** The current source is a demonstration scaffold with two business endpoints. `/api/login` returns a fixed placeholder, not a verified JWT; database/model files are empty. Production and scalability statements below describe intended goals, not validated capabilities.
+>
+> **Engineering evidence:** [API reference + cURL + security](docs/API.md) · [Measured local performance and limitations](docs/PERFORMANCE.md) · [Contract tests](tests/test_api.py) · [Contributing](CONTRIBUTING.md). Swagger runs at `/docs`; the real generated contract is `/openapi.json`.
+
 # Enterprise Backend System
 
 Production-ready backend API built with FastAPI, designed for high scalability and performance.
@@ -38,7 +42,7 @@ An example of a successful JSON response from the root endpoint, demonstrating t
 enterprise-backend-system
 │
 ├── app
-│   ├── main.py
+│   └── main.py
 │
 ├── models
 │   └── user.py
